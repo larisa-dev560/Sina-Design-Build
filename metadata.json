@@ -2,5 +2,7 @@
   "name": "Sina Design & Build",
   "description": "Luxury residential remodeling and custom design-build based in Buena Park, CA. Exceptional kitchens, bathrooms, tile & stone, custom flooring, and architectural transformations.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }
