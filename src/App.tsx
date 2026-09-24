@@ -55,11 +55,8 @@ export default function App() {
 
       {/* Main Sections */}
       <main>
-        {/* Fullscreen Cinematic Hero Slider & Floating Form */}
-        <HeroSlider
-          onOpenQuoteModal={() => handleOpenQuoteModal()}
-          onSubmitLead={handleLeadSubmitted}
-        />
+        {/* Fullscreen Cinematic Hero Slider */}
+        <HeroSlider onOpenQuoteModal={() => handleOpenQuoteModal()} />
 
         {/* Trust Statistics with Count-Up */}
         <TrustStats />
@@ -73,11 +70,11 @@ export default function App() {
         {/* Interactive Before & After Transformation Slider */}
         <BeforeAfterSlider />
 
-        {/* Featured Project Gallery with Category Tabs & Lightbox */}
-        <ProjectGallery onOpenQuoteModal={handleOpenQuoteModal} />
+        {/* Featured Project Gallery with Clean Lightbox */}
+        <ProjectGallery />
 
         {/* 5-Step Design-Build Process */}
-        <ProcessTimeline onOpenQuoteModal={() => handleOpenQuoteModal()} />
+        <ProcessTimeline />
 
         {/* Why Choose Sina Design & Build */}
         <WhyChooseUs />

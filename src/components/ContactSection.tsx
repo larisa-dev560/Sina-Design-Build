@@ -14,7 +14,6 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onSubmitLead }) 
     email: '',
     phone: '',
     projectType: 'Kitchen Remodeling',
-    budget: '$25k-$50k',
     timeline: 'Within 1-3 Months',
     message: '',
   });
@@ -30,7 +29,6 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onSubmitLead }) 
         email: '',
         phone: '',
         projectType: 'Kitchen Remodeling',
-        budget: '$25k-$50k',
         timeline: 'Within 1-3 Months',
         message: '',
       });
@@ -244,46 +242,25 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onSubmitLead }) 
                     </div>
                   </div>
 
-                  {/* Project Type & Budget */}
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-[11px] font-semibold uppercase tracking-wider text-neutral-300 mb-1.5">
-                        Project Scope
-                      </label>
-                      <select
-                        value={formData.projectType}
-                        onChange={(e) =>
-                          setFormData({ ...formData, projectType: e.target.value })
-                        }
-                        className="w-full px-4 py-3 rounded-xl bg-[#111111] border border-neutral-700 text-white text-xs focus:outline-none focus:border-[#FF914D] focus:ring-1 focus:ring-[#FF914D] transition-colors"
-                      >
-                        <option value="Kitchen Remodeling">Kitchen Remodeling</option>
-                        <option value="Bathroom Remodeling">Bathroom Remodeling</option>
-                        <option value="Tile & Stone">Tile &amp; Stone Installation</option>
-                        <option value="Flooring Solutions">Flooring Solutions</option>
-                        <option value="Interior Renovation">Interior Renovation</option>
-                        <option value="Full Custom Design Build">Full Custom Design Build</option>
-                      </select>
-                    </div>
-
-                    <div>
-                      <label className="block text-[11px] font-semibold uppercase tracking-wider text-neutral-300 mb-1.5">
-                        Estimated Budget
-                      </label>
-                      <select
-                        value={formData.budget}
-                        onChange={(e) =>
-                          setFormData({ ...formData, budget: e.target.value })
-                        }
-                        className="w-full px-4 py-3 rounded-xl bg-[#111111] border border-neutral-700 text-white text-xs focus:outline-none focus:border-[#FF914D] focus:ring-1 focus:ring-[#FF914D] transition-colors"
-                      >
-                        <option value="Under $10k">Under $10,000</option>
-                        <option value="$10k-$25k">$10,000 – $25,000</option>
-                        <option value="$25k-$50k">$25,000 – $50,000</option>
-                        <option value="$50k-$100k">$50,000 – $100,000</option>
-                        <option value="$100k+">$100,000+</option>
-                      </select>
-                    </div>
+                  {/* Project Type */}
+                  <div>
+                    <label className="block text-[11px] font-semibold uppercase tracking-wider text-neutral-300 mb-1.5">
+                      Project Scope
+                    </label>
+                    <select
+                      value={formData.projectType}
+                      onChange={(e) =>
+                        setFormData({ ...formData, projectType: e.target.value })
+                      }
+                      className="w-full px-4 py-3 rounded-xl bg-[#111111] border border-neutral-700 text-white text-xs focus:outline-none focus:border-[#FF914D] focus:ring-1 focus:ring-[#FF914D] transition-colors"
+                    >
+                      <option value="Kitchen Remodeling">Kitchen Remodeling</option>
+                      <option value="Bathroom Remodeling">Bathroom Remodeling</option>
+                      <option value="Tile & Stone">Tile &amp; Stone Installation</option>
+                      <option value="Flooring Solutions">Flooring Solutions</option>
+                      <option value="Interior Renovation">Interior Renovation</option>
+                      <option value="Full Custom Design Build">Full Custom Design Build</option>
+                    </select>
                   </div>
 
                   {/* Message */}

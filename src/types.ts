@@ -37,7 +37,7 @@ export interface ConsultationFormData {
   phone: string;
   email: string;
   projectType: string;
-  budget: string;
+  budget?: string;
   timeline?: string;
   message: string;
 }

@@ -22,7 +22,6 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
     phone: '',
     email: '',
     projectType: preselectedService || 'Kitchen Remodeling',
-    budget: '$25k-$50k',
     timeline: 'Within 1-3 Months',
     message: '',
   });
@@ -131,41 +130,23 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
               </div>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              <div>
-                <label className="block text-[11px] font-semibold uppercase tracking-wider text-neutral-300 mb-1">
-                  Project Type
-                </label>
-                <select
-                  value={formData.projectType}
-                  onChange={(e) =>
-                    setFormData({ ...formData, projectType: e.target.value })
-                  }
-                  className="w-full px-3 py-2.5 rounded-lg bg-[#141414] border border-neutral-700 text-white text-xs focus:outline-none focus:border-[#FF914D]"
-                >
-                  <option value="Kitchen Remodeling">Kitchen Remodeling</option>
-                  <option value="Bathroom Remodeling">Bathroom Remodeling</option>
-                  <option value="Flooring">Flooring Solutions</option>
-                  <option value="Tile & Stone">Tile &amp; Stone Installation</option>
-                  <option value="Full Renovation">Full Custom Design Build</option>
-                </select>
-              </div>
-
-              <div>
-                <label className="block text-[11px] font-semibold uppercase tracking-wider text-neutral-300 mb-1">
-                  Estimated Budget
-                </label>
-                <select
-                  value={formData.budget}
-                  onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
-                  className="w-full px-3 py-2.5 rounded-lg bg-[#141414] border border-neutral-700 text-white text-xs focus:outline-none focus:border-[#FF914D]"
-                >
-                  <option value="Under $10k">Under $10,000</option>
-                  <option value="$10k-$25k">$10k – $25k</option>
-                  <option value="$25k-$50k">$25k – $50k</option>
-                  <option value="$50k+">$50,000+</option>
-                </select>
-              </div>
+            <div>
+              <label className="block text-[11px] font-semibold uppercase tracking-wider text-neutral-300 mb-1">
+                Project Type
+              </label>
+              <select
+                value={formData.projectType}
+                onChange={(e) =>
+                  setFormData({ ...formData, projectType: e.target.value })
+                }
+                className="w-full px-3 py-2.5 rounded-lg bg-[#141414] border border-neutral-700 text-white text-xs focus:outline-none focus:border-[#FF914D]"
+              >
+                <option value="Kitchen Remodeling">Kitchen Remodeling</option>
+                <option value="Bathroom Remodeling">Bathroom Remodeling</option>
+                <option value="Flooring">Flooring Solutions</option>
+                <option value="Tile & Stone">Tile &amp; Stone Installation</option>
+                <option value="Full Renovation">Full Custom Design Build</option>
+              </select>
             </div>
 
             <div>
